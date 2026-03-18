@@ -2,60 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tech Mart</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Mart | Smart Gadgets Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="page-bg" aria-hidden="true"></div>
 
-    <!-- Navbar -->
-    <header>
-        <h1>Tech Mart</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Cart</a>
+    <header class="site-header">
+        <a class="brand" href="#">Tech Mart</a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#deals">Deals</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <button class="ghost-btn">Cart (2)</button>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Upgrade Your Tech 🚀</h2>
-        <p>Latest gadgets at best prices</p>
-        <button>Shop Now</button>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <p class="eyebrow">Fresh Tech Drop 2026</p>
+            <h1>Future-ready gadgets built for speed and style.</h1>
+            <p class="hero-copy">Discover curated laptops, smartwatches, phones, and accessories with fast delivery and student-friendly pricing.</p>
+            <div class="hero-actions">
+                <button class="primary-btn">Explore Collection</button>
+                <button class="secondary-btn">View Offers</button>
+            </div>
+            <div class="hero-metrics" id="deals">
+                <div>
+                    <h2>12K+</h2>
+                    <p>Happy customers</p>
+                </div>
+                <div>
+                    <h2>250+</h2>
+                    <p>Curated products</p>
+                </div>
+                <div>
+                    <h2>48H</h2>
+                    <p>Fastest delivery</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Products -->
-    <section class="products">
+        <section id="products" class="products">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Silver laptop on table">
+                <h3>ZenBook Pro 14</h3>
+                <p class="price">₹79,999</p>
+                <p class="meta">Intel i7 • 16GB RAM • 512GB SSD</p>
+                <button>Add to Cart</button>
+            </article>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Laptop</h3>
-            <p>₹60,000</p>
-            <button>Add to Cart</button>
-        </div>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Smartphone with colorful display">
+                <h3>Nova X Smartphone</h3>
+                <p class="price">₹34,499</p>
+                <p class="meta">120Hz AMOLED • 5G • 108MP Camera</p>
+                <button>Add to Cart</button>
+            </article>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Smartphone</h3>
-            <p>₹25,000</p>
-            <button>Add to Cart</button>
-        </div>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80" alt="Wireless over-ear headphones">
+                <h3>Sonic ANC Headphones</h3>
+                <p class="price">₹6,999</p>
+                <p class="meta">Noise Cancellation • 30h Battery</p>
+                <button>Add to Cart</button>
+            </article>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Headphones</h3>
-            <p>₹3,000</p>
-            <button>Add to Cart</button>
-        </div>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=600&q=80" alt="Black smartwatch on wrist">
+                <h3>Pulse Smart Watch</h3>
+                <p class="price">₹8,499</p>
+                <p class="meta">AMOLED • GPS • Heart Rate Tracker</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+    </main>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Smart Watch</h3>
-            <p>₹5,000</p>
-            <button>Add to Cart</button>
-        </div>
-
-    </section>
-
+    <footer id="contact" class="site-footer">
+        <p>Tech Mart • Built for creators, students, and dreamers.</p>
+    </footer>
 </body>
 </html>
